@@ -209,6 +209,11 @@
             <version>8.1.0.jre13-preview</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>by.com.station.car</groupId>
+            <artifactId>data-access</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
