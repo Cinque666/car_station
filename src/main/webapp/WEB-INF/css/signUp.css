@@ -1,0 +1,24 @@
+.registration-page{
+    height: 100%;
+    background-image: url(https://i.trbna.com/preset/wysiwyg/e/15/6485af7dd11e992bac00fb2d7bd36.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+
+.form-group{
+    width:30%;
+    margin-left: 35%;
+}
+
+.signUp-h1{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.reg-btn{
+    text-align: center;
+}
+

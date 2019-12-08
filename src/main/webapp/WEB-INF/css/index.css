@@ -1,0 +1,29 @@
+.index-container{
+    width:100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+
+.gasStation{
+    background-size: 155% auto;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/f2/69/30/f2693050e8c3559ed8345f868a495a99.jpg);
+    /*background-image: url(https://iq.drivenn.ru/q9r0c9ihfea5s_1hfmz8e.jpeg);*/
+    display: table-cell;
+    width: 50%;
+    height: 50%;
+}
+
+.carWashing{
+    background-size: 155% auto;
+    background-position: center;
+    background-image: url(https://s1.1zoom.ru/b5050/444/BMW_M4_Coupe_F82_by_436312_1920x1200.jpg);
+    display: table-cell;
+    width: 50%;
+    height: 50%;
+}
+
+.main-buttons{
+    margin-top:50%;
+}
