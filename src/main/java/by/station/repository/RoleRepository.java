@@ -30,4 +30,11 @@ public class RoleRepository {
                 .createQuery(Query.SELECT_FROM_ROLE.getQuery(), Role.class)
                 .list();
     }
+
+    public Role getRoleByName(String role) {
+        return sessionFactory.getCurrentSession()
+                .createQuery(Query.SELECT_FROM_ROLE_WHERE_NAME_LIKE.getQuery(), Role.class)
+                .setParameter("param", role)
+                .getSingleResult();
+    }
 }

@@ -1,0 +1,11 @@
+.refuel-container{
+    text-align: center;
+    background-size: 100% auto;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/f2/69/30/f2693050e8c3559ed8345f868a495a99.jpg);
+    height: 100%;
+}
+
+.buyFuel-h1{
+    color: white;
+}

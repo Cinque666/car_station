@@ -9,6 +9,15 @@
     <style>
         <%@include file="/WEB-INF/css/signUp.css"%>
     </style>
+    <style>
+        <%@include file="/WEB-INF/css/gasStation.css"%>
+    </style>
+    <style>
+        <%@include file="/WEB-INF/css/buyFuel.css"%>
+    </style>
+    <style>
+        <%@include file="/WEB-INF/css/fuelPrices.css"%>
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -30,7 +39,7 @@
                     <a class="nav-link" href="${pageContext.request.contextPath}/information">Information <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/prices">Prices</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/fuelPrices">Prices</a>
                 </li>
 
                 <li class="nav-item">
@@ -38,7 +47,7 @@
                 </li>
                 <sec:authorize access="hasRole('ADMIN')">
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/register">Sign Up</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/signUp">Sign Up</a>
                     </li>
                 </sec:authorize>
 
@@ -84,7 +93,7 @@
                 </li>
                 <sec:authorize access="hasRole('ADMIN')">
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/register">Sign Up</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/signUp">Sign Up</a>
                     </li>
                 </sec:authorize>
 
