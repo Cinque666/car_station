@@ -21,7 +21,7 @@ public class WashOrdersController {
     @RequestMapping(method = RequestMethod.GET)
     public String getWashOrdersTable(Model model){
 
-        
+
 
         model.addAttribute("version", "wash");
         return "washOrders";

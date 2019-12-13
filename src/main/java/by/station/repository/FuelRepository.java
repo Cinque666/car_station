@@ -35,4 +35,10 @@ public class FuelRepository {
         sessionFactory.getCurrentSession()
                 .saveOrUpdate(fuel);
     }
+
+    public void deleteFuelById(Integer id) {
+        Fuel fuel = new Fuel();
+        fuel.setFuelId(id);
+        sessionFactory.getCurrentSession().delete(fuel);
+    }
 }
