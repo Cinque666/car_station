@@ -2,11 +2,19 @@ package by.station.controller.util;
 
 public class WashOrder {
 
+    private Integer washOrderId;
     private String carWashName;
     private String clientName;
     private String masterName;
     private String vehicleName;
 
+    public Integer getWashOrderId() {
+        return washOrderId;
+    }
+
+    public void setWashOrderId(Integer washOrderId) {
+        this.washOrderId = washOrderId;
+    }
 
     public String getCarWashName() {
         return carWashName;

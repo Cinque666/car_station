@@ -28,12 +28,13 @@
         <tbody>
         <c:forEach var="order" items="${orders}">
             <tr>
-                <th scope="row">${order.carWashName}</th>
+                <th scope="row">${order.washOrderId}</th>
+                <td>${order.carWashName}</td>
                 <td>${order.clientName}</td>
                 <td>${order.masterName}</td>
                 <td>${order.vehicleName}</td>
                 <sec:authorize access="hasRole('ADMIN')">
-                    <td><a href="${pageContext.request.contextPath}/deleteOrder/${order.orderId}">Delete</a></td>
+                    <td><a href="${pageContext.request.contextPath}/deleteOrder/${order.washOrderId}">Delete</a></td>
                 </sec:authorize>
             </tr>
         </c:forEach>
