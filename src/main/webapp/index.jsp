@@ -11,13 +11,13 @@
 <div class="index-container">
     <div class="gasStation">
         <form action="${pageContext.request.contextPath}/gasStation" method="get">
-            <button type="submit" class="btn btn-dark main-buttons">Refuel</button>
+            <button type="submit" class="btn btn-dark main-buttons">Заправка</button>
         </form>
     </div>
 
     <div class="carWashing">
         <form action="${pageContext.request.contextPath}/carWashing" method="get">
-            <button type="submit" class="btn btn-dark main-buttons">Wash</button>
+            <button type="submit" class="btn btn-dark main-buttons">Мойка авто</button>
         </form>
     </div>
 </div>

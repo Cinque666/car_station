@@ -11,27 +11,27 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 
 <div class="registration-page">
-    <div class="signUp-h1"><h1>SignUp new User</h1></div>
+    <div class="signUp-h1"><h1>Регистрация нового пользователя</h1></div>
 
     <form action="${pageContext.request.contextPath}/signUp" method="POST">
         <div class="form-group">
-            <label for="login">Login</label>
-            <input type="text" name="login" class="form-control" id="login" placeholder="Enter login">
+            <label for="login">Логин</label>
+            <input type="text" name="login" class="form-control" id="login" placeholder="Введите логин">
         </div>
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+            <label for="password">Введите пароль</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Введите пароль">
         </div>
         <div class="form-group">
             <select name="role" id="roleId" class="form-control">
-                <option disabled selected>Choose role</option>
+                <option disabled selected>Выберите роль</option>
                 <c:forEach var="role" items="${roles}">
                     <option>${role.name}</option>
                 </c:forEach>
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary reg-btn">Submit</button>
+        <button type="submit" class="btn btn-primary reg-btn">Отправить</button>
     </form>
 </div>
 

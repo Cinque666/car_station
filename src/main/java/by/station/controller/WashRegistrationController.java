@@ -67,7 +67,7 @@ public class WashRegistrationController {
 
         model.addAttribute("version", "wash");
 
-        return "carWashing";
+        return "redirect:/carWashing";
     }
 
     private List<Person> deleteClients(List<Person> persons){

@@ -12,22 +12,22 @@
 
 <div class="editFuelPrice-container">
 
-    <div class="edit-fuelPrice-h1"><h1>Edit fuel price</h1></div>
+    <div class="edit-fuelPrice-h1"><h1>Редактирование цен на бензин</h1></div>
 
     <form action="${pageContext.request.contextPath}/editFuelPrice" method="POST">
 
         <div class="form-group">
-            <label for="fuelId">ID</label>
+            <label for="fuelId">Идентификатор</label>
             <input type="text" name="fuelId" class="form-control" id="fuelId" value="${fuel.fuelId}">
         </div>
 
         <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Название</label>
             <input type="text" name="name" class="form-control" id="name" value="${fuel.name}">
         </div>
 
         <div class="form-group">
-            <label for="price">Price, $</label>
+            <label for="price">Цена, $</label>
             <input type="text" name="price" class="form-control" id="price" value="${fuel.price}">
         </div>
 

@@ -1,12 +1,8 @@
-.carWashing-container{
+.washPrices-container{
     height: 100%;
     width: 100%;
     background-size: 100% auto;
     background-position: center;
     background-image: url(https://s1.1zoom.ru/b5050/444/BMW_M4_Coupe_F82_by_436312_1920x1200.jpg);
-}
-
-.vl {
-    border-left: 6px solid green;
-    height: 500px;
+    text-align: center;
 }

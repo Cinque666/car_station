@@ -11,16 +11,19 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<div class="fuel-prices-container">
-    <table class="table table-dark">
+<div class="fuel-prices-container" style="padding-top: 5;">
+    <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 container text-center">
+        <div class="text-center bg-light">
+            <div class="text-left" style="margin: 20px; padding: 20px 0;">
+    <table id="pricesTable" class="table table-dark">
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price, $</th>
+            <th scope="col">Навзание</th>
+            <th scope="col">Цена, $</th>
             <sec:authorize access="hasRole('ADMIN')">
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
+                <th scope="col">Редактировать</th>
+                <th scope="col">Удалить</th>
             </sec:authorize>
         </tr>
         </thead>
@@ -31,13 +34,37 @@
                 <td>${fuel.name}</td>
                 <td>${fuel.price}</td>
                 <sec:authorize access="hasRole('ADMIN')">
-                    <td><a href="${pageContext.request.contextPath}/editFuelPrice/${fuel.fuelId}">Edit</a></td>
-                    <td><a href="${pageContext.request.contextPath}/deleteFuelPrice/${fuel.fuelId}">Delete</a></td>
+                    <td><a href="${pageContext.request.contextPath}/editFuelPrice/${fuel.fuelId}">Редактировать</a></td>
+                    <td><a href="${pageContext.request.contextPath}/deleteFuelPrice/${fuel.fuelId}">Удалить</a></td>
                 </sec:authorize>
             </tr>
         </c:forEach>
         </tbody>
     </table>
+            </div>
+        </div>
+    </div>
 </div>
 
 <jsp:include page="footer.jsp"/>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#pricesTable').DataTable({
+            "language": {
+                "lengthMenu": "Отображать _MENU_ записей",
+                "zeroRecords": "Извините - поиск не дал результатов",
+                "info": "Отображаемая страница _PAGE_ из _PAGES_",
+                "infoEmpty": "0 записей",
+                "paginate": {
+                    "first": "Первая",
+                    "last": "Последняя",
+                    "next": "Следующая",
+                    "previous": "Предыдущая"
+                },
+                "search": "Поиск:",
+                "infoFiltered": "(отфильтровано из _MAX_ записей)",
+            }
+        });
+    });
+</script>

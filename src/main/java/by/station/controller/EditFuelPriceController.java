@@ -41,7 +41,7 @@ public class EditFuelPriceController {
             model.addAttribute("message", "edition successfully");
             model.addAttribute("version", "gas");
 
-            return "gasStation";
+            return "redirect:/gasStation";
         }
 
         return "error";

@@ -11,12 +11,12 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 
 <div class="refuel-container">
-    <div class="buyFuel-h1"><h1>Refuel information</h1></div>
+    <div class="buyFuel-h1"><h1>Заправочная информация</h1></div>
 
     <form action="${pageContext.request.contextPath}/buyFuel" method="POST">
         <div class="form-group">
             <select name="gasStations" id="gasStations" class="form-control">
-                <option disabled selected>Choose gas station</option>
+                <option disabled selected>Выберите заправочную станцию</option>
                 <c:forEach var="gasStation" items="${gasStations}">
                     <option>${gasStation.name}</option>
                 </c:forEach>
@@ -25,7 +25,7 @@
 
         <div class="form-group">
         <select name="dispenser" id="dispensers" class="form-control">
-            <option disabled selected>Choose dispenser</option>
+            <option disabled selected>Выберите раздаточное устройство</option>
                 <c:forEach var="dispenser" items="${dispensers}">
                     <option>${dispenser.dispenserId}</option>
                 </c:forEach>
@@ -34,7 +34,7 @@
 
         <div class="form-group">
             <select name="fuel-type" id="fuel-type" class="form-control">
-                <option disabled selected>Choose fuel</option>
+                <option disabled selected>Выберите тип бензина</option>
                 <c:forEach var="fuel" items="${fuels}">
                     <option>${fuel.name}</option>
                 </c:forEach>
@@ -42,10 +42,10 @@
         </div>
 
         <div class="form-group">
-            <label for="liters">Liters</label>
-            <input type="text" name="liters" class="form-control" id="liters" placeholder="Enter number of liters">
+            <label for="liters">Количество литров</label>
+            <input type="text" name="liters" class="form-control" id="liters" placeholder="Введите количество литров">
         </div>
-        <button type="submit" class="btn btn-primary reg-btn">Submit</button>
+        <button type="submit" class="btn btn-primary reg-btn">Отправить</button>
     </form>
 </div>
 

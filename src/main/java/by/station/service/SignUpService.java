@@ -47,7 +47,6 @@ public class SignUpService {
 
         Integer userCountByLogin = appUserRepository.findUserCountByLogin(user.getLogin());
         if (userCountByLogin != null && userCountByLogin >= 1) {
-            System.out.println("why here?");
             return false;
         }
 
